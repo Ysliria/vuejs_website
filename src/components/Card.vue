@@ -13,7 +13,7 @@
         {{ content }}
       </b-card-text>
 
-      <b-button href="#" variant="primary">Voir</b-button>
+      <b-button :href="href" variant="primary">Voir</b-button>
     </b-card>
   </div>
 </template>
@@ -33,6 +33,10 @@ export default {
       type: String,
       default: ""
     },
+    href: {
+      type : String,
+      default: ""
+    }
   }
 }
 </script>
